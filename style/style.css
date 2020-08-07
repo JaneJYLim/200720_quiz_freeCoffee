@@ -1,0 +1,311 @@
+@charset "UTF-8";
+@import url("http://juyeonsh412.dothome.co.kr/200528/cssReset/reset.css");
+
+/*공통영역 시작*/
+*{
+    color: #555;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+div#wrap{
+    width: 1200px;
+    margin: 10px auto;
+}
+ul{
+    list-style: none;
+}
+
+/*공통영역 끝*/
+
+/*Guide Line*/
+
+/*div#wrap{border: 8px solid #08f;}*/
+/*div#topHeader{border: 1px solid #8f0;}*/
+/*div#topHeader>*{border: 1px solid #00f;}*/
+/*div#logo{border: 1px solid #8f0;}*/
+/*#header>nav#gnb li{border: 1px solid #000;}*/
+/*Guide Line*/
+/*div#logo>*{border: 1px solid #00f;}*/
+
+/*header#header 영역 시작*/
+#header>#topHeader{
+    display: flex;
+    justify-content: space-between;
+}
+
+#lnbMenu>li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#topHeader a{
+    color: #555;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+#topHeader img{
+    vertical-align: middle;
+}
+
+#header #logo{
+    padding: 10px 0;
+    margin-bottom: 14px;
+    position: relative;
+}
+
+#header #logo>#headerLogo{
+    text-align: center;
+}
+
+#header #logo>#search{
+    width: 200px;
+    text-align: right;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #000;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#header #logo>#search>input{
+    width: 174px;
+    padding: 4px;
+    border: none;
+    outline: none;
+}
+
+#header #logo>#search>img{
+    vertical-align: middle;
+}
+/*GBN메뉴 시작 - display: flex; 적용*/
+#header>nav#gnb>ul{
+    display: flex;
+}
+
+#header>nav#gnb li{
+    height: 62px;
+    line-height: 62px;
+    text-align: center;
+    background-color: #3e4347;
+}
+
+#header>nav#gnb li:first-child{
+    width: 54px;
+}
+
+
+#header>nav#gnb li:not(:first-child){
+    width: 143px;
+    border: 1px solid #3b3e42;
+}
+
+#header>nav#gnb li a{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+#header>nav#gnb li:hover a{
+    color: #ff0;
+} /*GNB메뉴 마우스 hover상태의 글자색 변경(노랑색)*/
+
+#header>nav#gnb li:first-child a{
+    font-size: 24px;
+}
+
+#header>nav#gnb li:nth-child(2) a{
+    color: #ff0;
+}
+
+
+/*GBN메뉴 끝*/
+/*header#header 영역 끝*/
+
+/*div#locator 영역 시작*/
+#locator{
+    margin: 40px 0;
+
+}
+#locator ul::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+#locator li{
+    color: #000;
+    font-size: 12px;
+    padding-right: 4px;
+    float: left;
+}
+/*div#locator 영역 끝*/
+
+/*main#main 영역 시작*/
+#main{
+    padding-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+#main>div{
+    width: 500px;
+/*    border: 1px solid #f00;*/
+}
+    /*div#goodsImgArea영역 시작*/
+    #main #goodsImg{
+        text-align: center;
+    }
+
+    #main #goodsImg img{
+        width: 300px;
+    }
+
+    #main #extendImg{
+        width: 120px;
+        text-align: center;
+        /*border: 1px solid #00f;*/
+        margin: 0 auto;
+
+        cursor: pointer;
+    }
+
+    #main #extendImg img{
+        vertical-align: middle;
+    }
+
+    #main #extendImg span{
+        font-size: 11px;
+        font-weight: bold;
+    }
+    /*div#goodsImgArea영역 끝*/
+
+    /*div#orderInfoArea영역 시작*/
+#main #orderInfoArea{
+    padding-left: 160px;
+}
+#main #orderInfoArea>h4{
+    margin-bottom: 20px;
+}
+#main #orderInfoArea>ul{
+    margin-bottom: 20px;
+}
+#main #orderInfoArea>ul#saleBasicInfo>li{
+    height: 24px;
+    line-height: 24px;
+}
+#main #orderInfoArea>ul#saleBasicInfo span{
+    width: 80px;
+    font-size: 12px;
+    font-weight: bold;
+
+/*    border: 1px solid #000;*/
+    display: inline-block;
+
+}
+
+#main #orderInfoArea .price{
+    color: #f00;
+    font-weight: bold;
+}
+#main #orderInfoArea table{
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+#main #orderInfoArea table td{
+    height: 40px;
+    font-size: 12px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+}
+#main #orderInfoArea table td:first-child{
+    width: 160px;
+}
+#main #orderInfoArea table td:nth-child(2){
+    width: 90px;
+}
+#main #orderInfoArea table td:last-child{
+    width: 90px;
+}
+#main #orderInfoArea table tr:last-child td{
+    text-align: right;
+    padding-right: 10px;
+}
+#main #orderInfoArea table td #valignFrame{
+    width: 70px;
+    height: 34px;
+    padding-top: 3px;
+/*    border: 1px solid #f00;*/
+    position: relative;
+}
+
+#main #orderInfoArea table td input#goodsCnt{
+    width: 40px;
+    height: 30px;
+    text-align: right;
+    padding: 6px;
+    position: absolute;
+    left: 0;
+}
+
+#main #orderInfoArea table td span#cntBtn{
+    width: 15px;
+    height: 26px;
+    text-align: center;
+/*    border: 1px solid #000;*/
+    display: inline-block;
+    position: absolute;
+    left: 44px;
+    cursor: pointer;
+}
+#main #orderInfoArea table td span#cntBtn img{
+    position: relative;
+    top: 1px;
+}
+#main #orderInfoArea table td span#cntBtn img:nth-child(2){
+    position: relative;
+    top: -3px;
+}
+#main #orderInfoArea #snsIcon{
+    margin-bottom: 40px;
+}
+    /*div#orderInfoArea영역 끝*/
+
+/*main#main 영역 끝*/
+/*div#modalArea 영역 시작*/
+#modalArea{
+/*    border: 4px solid #f00;*/
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
+    }
+
+#popUpArea{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+#closePopUp{
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 40px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    cursor: pointer;
+}
+/*div#modalArea 영역 끝*/
